@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.2",
+  "name": "obsidian-vault-images-mcp",
+  "version": "1.0.1",
+  "description": "MCP server to view Obsidian vault images in Claude",
+  "author": {
+    "name": "Carlos"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {
+        "VAULT_MEDIA_PATH": "${user_config.PATH}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "get_vault_image",
+      "description": "Retrieve images from Obsidian vault"
+    }
+  ],
+  "user_config": {
+    "PATH": {
+      "type": "directory",
+      "title": "Obsidian Media Directory",
+      "description": "Path to your vault's Media folder (e.g., C:\\Users\\You\\Documents\\Obsidian\\YourVault\\Media)",
+      "required": true,
+      "sensitive": false
+    }
+  },
+  "license": "MIT"
+}

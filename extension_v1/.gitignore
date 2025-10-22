@@ -1,0 +1,5 @@
+node_modules/
+*.mcpb
+*.dxt
+.DS_Store
+*.log
