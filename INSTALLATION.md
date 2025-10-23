@@ -14,7 +14,7 @@ Complete installation instructions for the Obsidian Vault Images MCP extension.
 ```bash
 cd extension_v2
 npm install
-npm run build
+mcpb pack . obsidian-vault-images-mcp-v2.mcpb
 ```
 
 ### 2. Install Extension

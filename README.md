@@ -57,14 +57,14 @@ Production-ready version with user-configurable directories via Claude Desktop U
    npm install
    ```
 
-3. **Build the extension**
+3. **Package the extension**
    ```bash
-   npm run build
+   mcpb pack
    ```
 
 4. **Install in Claude Desktop**
    
-   The build process creates `obsidian-vault-images-mcp-v2.mcpb` file.
+   The pack command creates `obsidian-vault-images-mcp-v2.mcpb` file.
    
    **Option A: Double-click** the `.mcpb` file (if file association is set up)
    
@@ -119,7 +119,7 @@ Claude will use the `get_vault_image` tool to retrieve images from your configur
 ```bash
 cd extension_v2
 npm install
-npm run build
+mcpb pack . obsidian-vault-images-mcp-v2.mcpb
 ```
 
 This creates `obsidian-vault-images-mcp-v2.mcpb` ready for installation.

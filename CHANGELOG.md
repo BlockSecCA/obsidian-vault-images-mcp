@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Directory configuration through settings (no code editing)
 - Proper MCP roots protocol implementation
 - User-friendly configuration validation
-- Build script for easier packaging (`npm run build`)
+- Packaging with mcpb CLI (`mcpb pack`)
 
 ### Changed
 - Moved from hardcoded paths to user configuration

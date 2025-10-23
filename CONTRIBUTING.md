@@ -62,8 +62,8 @@ npm install
 # Test locally
 node server/index.js --roots "C:\path\to\test\dir"
 
-# Build
-npm run build
+# Package the extension
+mcpb pack . obsidian-vault-images-mcp-v2.mcpb
 
 # Install in Claude Desktop for testing
 # (See INSTALLATION.md)
@@ -103,7 +103,7 @@ const p = normalizePath(filePath);
 - [ ] Code follows existing style
 - [ ] Changes are tested in Claude Desktop
 - [ ] Manifest validates: `mcpb validate manifest.json`
-- [ ] Build succeeds: `npm run build`
+- [ ] Build succeeds: `mcpb pack . obsidian-vault-images-mcp-v2.mcpb`
 - [ ] No console errors in logs
 - [ ] Documentation updated if needed
 

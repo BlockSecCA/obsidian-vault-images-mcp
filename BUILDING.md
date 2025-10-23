@@ -35,15 +35,15 @@ This installs:
 - `@modelcontextprotocol/sdk` - MCP SDK for Node.js
 - Development dependencies
 
-### 3. Build the extension
+### 3. Package the extension
 ```bash
-npm run build
+mcpb pack . obsidian-vault-images-mcp-v2.mcpb
 ```
 
-This script:
+This command:
 1. Validates the manifest.json
 2. Packages all files into `obsidian-vault-images-mcp-v2.mcpb`
-3. Places the .mcpb file in the extension_v2 directory
+3. Places the .mcpb file in the current directory
 
 ### 4. Verify the build
 ```bash
@@ -134,18 +134,21 @@ This catches common errors:
 
 Edit `package.json` scripts section:
 
+The package.json already includes useful scripts. You can add more:
+
 ```json
 {
   "scripts": {
-    "build": "mcpb pack . obsidian-vault-images-mcp-v2.mcpb",
     "validate": "mcpb validate manifest.json",
+    "pack": "mcpb pack . obsidian-vault-images-mcp-v2.mcpb",
     "clean": "rm -f *.mcpb"
   }
 }
 ```
 
-Add custom scripts:
-- `npm run validate` - Check manifest without building
+Then use:
+- `npm run validate` - Check manifest without packaging
+- `npm run pack` - Package the extension
 - `npm run clean` - Remove built .mcpb files
 
 ### Environment-Specific Builds
@@ -183,7 +186,7 @@ jobs:
       - name: Install MCPB
         run: npm install -g @anthropic-ai/mcpb
       - name: Build extension
-        run: cd extension_v2 && npm run build
+        run: cd extension_v2 && mcpb pack . obsidian-vault-images-mcp-v2.mcpb
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
