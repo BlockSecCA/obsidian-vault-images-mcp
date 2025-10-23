@@ -88,19 +88,7 @@ See [extension_v1/README.md](extension_v1/README.md) for V1-specific instruction
 
 ## Usage
 
-Once installed and configured, you can ask Claude to retrieve images:
-
-```
-Show me the Wardley Map diagram
-```
-
-```
-Get the FAIR Risk Model Overview image
-```
-
-```
-Display the Cynefin framework image
-```
+Once installed and configured, you can ask Claude to retrieve images referenced in Obsidian notes as links. Note the extension can be used with any directory that contains image files. 
 
 Claude will use the `get_vault_image` tool to retrieve images from your configured Media directories.
 
@@ -119,7 +107,7 @@ Claude will use the `get_vault_image` tool to retrieve images from your configur
 ```bash
 cd extension_v2
 npm install
-mcpb pack . obsidian-vault-images-mcp-v2.mcpb
+mcpb pack 
 ```
 
 This creates `obsidian-vault-images-mcp-v2.mcpb` ready for installation.
@@ -129,7 +117,7 @@ This creates `obsidian-vault-images-mcp-v2.mcpb` ready for installation.
 ```bash
 cd extension_v1
 npm install
-mcpb pack . obsidian-vault-images-mcp-v1.mcpb
+mcpb pack 
 ```
 
 ## Development
