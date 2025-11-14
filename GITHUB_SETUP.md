@@ -95,7 +95,7 @@ Replace GitHub URLs with your actual repository:
 ### 4. Initialize Git Repository
 
 ```bash
-cd "C:\Users\Carlos\OneDrive - AltoAzul Consulting Inc\code\claude-image-mcp"
+cd "C:\Users\YourUsername\OneDrive - <YourCompany>\code\claude-image-mcp"
 git init
 git add .
 git commit -m "Initial commit: Obsidian Vault Images MCP Extension"

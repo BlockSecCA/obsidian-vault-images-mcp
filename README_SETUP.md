@@ -22,7 +22,7 @@ pip install mcp
 
 Save `obsidian_vault_images_mcp.py` to a location on your system, for example:
 ```
-C:\Users\Carlos\mcp-servers\obsidian_vault_images_mcp.py
+C:\Users\YourUsername\mcp-servers\obsidian_vault_images_mcp.py
 ```
 
 ### 3. Configure Claude Desktop

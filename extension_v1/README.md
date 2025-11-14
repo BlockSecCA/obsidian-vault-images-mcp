@@ -90,7 +90,7 @@ Claude will call the `get_vault_image` tool, which returns the image as a base64
 1. **User asks about an image**
 2. **Claude calls the tool**: `get_vault_image({ filename: "Image.png" })`
 3. **MCP server**:
-   - Reads from `C:\Users\Carlos\Documents\Obsidian\blocksec\Media\Image.png`
+   - Reads from `C:\Users\YourUsername\Documents\Obsidian\blocksec\Media\Image.png`
    - Encodes to base64
    - Returns: `{ type: "image", data: "...", mimeType: "image/png" }`
 4. **Claude Desktop MCP framework** receives the response
@@ -101,7 +101,7 @@ Claude will call the `get_vault_image` tool, which returns the image as a base64
 The extension will prompt you for:
 
 - **Obsidian Media Directory**: Path to your vault's Media folder
-  - Example: `C:\Users\Carlos\Documents\Obsidian\blocksec\Media`
+  - Example: `C:\Users\YourUsername\Documents\Obsidian\blocksec\Media`
   - Or: `~/Documents/Obsidian/blocksec/Media`
 
 This path is stored securely by Claude Desktop and injected as an environment variable when the MCP server starts.

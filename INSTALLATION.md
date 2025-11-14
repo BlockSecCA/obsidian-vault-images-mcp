@@ -128,9 +128,9 @@ Configured directories should:
 ### Multiple Directories
 
 You can configure multiple Media directories:
-- Main vault: `C:\Users\Carlos\Documents\Obsidian\blocksec\Media`
-- Archive vault: `C:\Users\Carlos\Documents\Obsidian\archive\Media`
-- Assets folder: `C:\Users\Carlos\Documents\Assets`
+- Main vault: `C:\Users\YourUsername\Documents\Obsidian\blocksec\Media`
+- Archive vault: `C:\Users\YourUsername\Documents\Obsidian\archive\Media`
+- Assets folder: `C:\Users\YourUsername\Documents\Assets`
 
 The extension searches all configured directories when looking for an image.
 

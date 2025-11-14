@@ -4,7 +4,7 @@
 
 ### Step 1: Install Dependencies
 ```bash
-cd "C:\Users\Carlos\OneDrive - AltoAzul Consulting Inc\code\claude-image-mcp\extension_v2"
+cd "C:\Users\YourUsername\OneDrive - <YourCompany>\code\claude-image-mcp\extension_v2"
 npm install
 ```
 
@@ -24,7 +24,7 @@ You should see `extension_v2.mcpb` created in the directory.
 1. Go to: Extensions → obsidian-vault-images-mcp-v2 → Settings
 2. You should see a UI similar to the Filesystem extension
 3. Click "Add directory"
-4. Enter: `C:\Users\Carlos\Documents\Obsidian\blocksec\Media`
+4. Enter: `C:\Users\YourUsername\Documents\Obsidian\blocksec\Media`
 5. (Optional) Add more directories if you have multiple vaults
 
 ### Step 5: Test It!
