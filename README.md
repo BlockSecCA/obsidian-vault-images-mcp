@@ -196,6 +196,10 @@ Contributions welcome! Please:
 4. Test with Claude Desktop
 5. Submit a pull request
 
+## Author
+
+Carlos - BlockSecCA
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
