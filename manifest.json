@@ -1,8 +1,8 @@
 {
   "manifest_version": "0.2",
-  "name": "obsidian-vault-images-mcp-v2",
-  "version": "2.0.0",
-  "description": "MCP server to view Obsidian vault images in Claude with multi-directory support via Roots protocol",
+  "name": "image-viewer",
+  "version": "2.1.0",
+  "description": "MCP server to view images from configured directories in Claude",
   "author": {
     "name": "Carlos"
   },
@@ -21,7 +21,7 @@
   "user_config": {
     "image_directories": {
       "title": "Image Directories",
-      "description": "Directories containing Obsidian vault images that Claude can access",
+      "description": "Directories containing images that Claude can access",
       "type": "directory",
       "multiple": true,
       "required": true
@@ -29,12 +29,16 @@
   },
   "tools": [
     {
-      "name": "get_vault_image",
-      "description": "Retrieve images from Obsidian vaults"
+      "name": "get_image",
+      "description": "Retrieve an image by filename"
     },
     {
-      "name": "list_allowed_directories",
-      "description": "List configured image directories"
+      "name": "list_directories",
+      "description": "List configured image directories and their status"
+    },
+    {
+      "name": "list_images",
+      "description": "List images in a specific directory"
     }
   ],
   "license": "MIT"
